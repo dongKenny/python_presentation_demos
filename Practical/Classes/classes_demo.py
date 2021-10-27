@@ -1,4 +1,4 @@
-from Practical.Classes.student import Student
+from student import Student
 
 
 def student_demonstration(first_grade: float, second_grade: float):
@@ -10,6 +10,8 @@ def student_demonstration(first_grade: float, second_grade: float):
 
     print(f"{first_student}'s grade is {first_student.grade:.2f}")
     print(second_student.__repr__())
+
+    first_student.print_table()
 
 
 def main():
