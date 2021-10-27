@@ -11,7 +11,7 @@ def factorial(x):
 
 
 def main():
-    print(factorial(6))
+    print(factorial(4))
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-from name_good import debug_logins # , factorial
+from name_good import debug_logins  # , factorial
 
 
 def main():

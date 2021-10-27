@@ -17,6 +17,7 @@ def main():
     fruit_names.sort()
 
     print(fruit_names)
+    print()
 
 
 if __name__ == "__main__":

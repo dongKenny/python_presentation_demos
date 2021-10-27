@@ -16,7 +16,7 @@ def main():
 
     print(f'{float_value = }')                                      # ‘float_value = x'
     print(f'float_value is {float_value} :)')                       # in a string
-    print(f'{value1} {value2}')                                     # multiple variables
+    print(f'{value1} {value2}!')                                    # multiple variables
     print(f'Formatted float: {float_value:.2f}')                    # float format
     print(f'Hex Value of 100: {int_value:x}')                       # hex
     print(f'Octal Value of 100: {int_value:o}')                     # octal

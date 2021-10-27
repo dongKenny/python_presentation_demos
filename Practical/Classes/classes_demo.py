@@ -1,4 +1,4 @@
-from Presentation.Practical.Classes.student import Student
+from Practical.Classes.student import Student
 
 
 def student_demonstration(first_grade: float, second_grade: float):
@@ -13,7 +13,7 @@ def student_demonstration(first_grade: float, second_grade: float):
 
 
 def main():
-    student_demonstration(100, 0.)
+    student_demonstration(99.4, 2)
 
 
 if __name__ == "__main__":
