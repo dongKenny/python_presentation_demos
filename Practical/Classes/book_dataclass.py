@@ -3,6 +3,7 @@ from typing import List
 
 
 # Frozen = True makes it immutable, therefore it writes the hash function
+# Order = True makes the class implement ordering methods like total_ordering (eq, lt, gt, etc.)
 @dataclass(frozen=True, order=True)
 class Book:
     title: str = ""
