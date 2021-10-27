@@ -1,21 +1,33 @@
 from student import Student
 
 
-def student_demonstration(first_grade: float, second_grade: float):
-    first_student = Student("Kenny", "Dong")
-    second_student = Student("Hammond", "Cheese")
+def class_variable_demo(first_student: Student, second_student: Student):
+    print(f'{first_student} goes to {first_student.school}')
+    print(f'{second_student} goes to {first_student.school}')
+    print()
 
+    first_student.classes.extend(["Intermediate Japanese I", "Operating Systems"])
+    second_student.classes.extend(["Underwater Basket Weaving", "Operating Systems in Python"])
+
+    print(f'{first_student}\'s classes are {first_student.classes}')
+    print(f'{second_student}\'s classes are {second_student.classes}')
+
+
+def grade_demo(first_student: Student, second_student: Student, first_grade: float, second_grade: float):
     first_student.grade = first_grade
     second_student.grade = second_grade
 
-    print(f"{first_student}'s grade is {first_student.grade:.2f}")
-    print(second_student.__repr__())
-
     first_student.print_table()
+    second_student.print_table()
+    print()
 
 
 def main():
-    student_demonstration(99.4, 2)
+    first_student = Student("Kenny", "Dong")
+    second_student = Student("Hammond", "Cheese")
+
+    grade_demo(first_student, second_student, 99.4, 2)
+    class_variable_demo(first_student, second_student)
 
 
 if __name__ == "__main__":
