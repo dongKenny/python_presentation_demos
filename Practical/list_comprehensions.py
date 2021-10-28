@@ -17,6 +17,13 @@ def matrix_demo():
     print(flattened_matrix)
     print()
 
+    '''
+    Equivalent to:
+        for sublist in matrix:
+            for val in sublist:
+                flattened_matrix.append(val)
+    '''
+
 
 def main():
     squares_demo()
