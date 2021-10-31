@@ -1,9 +1,6 @@
-def get_message(message_exists: bool):
-    return "Hello World!" if message_exists else None
-
-
-def get_weather_tuple(is_sunny: bool):
-    return ("Rainy", "Sunny")[is_sunny]
+def set_excitement(message: str, optional_punctuation: str = None):
+    optional_punctuation = optional_punctuation or "."
+    return f"{message}{optional_punctuation}"
 
 
 def get_weather(is_sunny: bool):
@@ -16,14 +13,12 @@ def main():
     print(get_weather(False))
     print()
 
-    # (Rainy, Sunny)[T/F]
-    print(get_weather_tuple(True))
-    print(get_weather_tuple(False))
-    print()
-
     # T/F or Default
-    message = get_message(True)
-    print(message or "No messages found")
+    message = set_excitement("Hello, World")
+    print(message)
+
+    message_but_happy = set_excitement("Hello, World", "!!!")
+    print(message_but_happy)
 
 
 if __name__ == "__main__":
