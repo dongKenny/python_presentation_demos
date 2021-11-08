@@ -8,4 +8,6 @@ def debug_login():
 
 print("Hello World!")
 debug_login()
-
+print()
+print(f'Globals dict is: {globals()}')
+print(f"Logins are: {globals()['my_logins']}")

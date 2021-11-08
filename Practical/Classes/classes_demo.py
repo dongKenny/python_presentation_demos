@@ -2,8 +2,8 @@ from student import Student
 
 
 def class_variable_demo(first_student: Student, second_student: Student):
-    print(f'{first_student} goes to {first_student.school}')
-    print(f'{second_student} goes to {first_student.school}')
+    print(f'{first_student} goes to the {first_student.school}')
+    print(f'{second_student} goes to the {first_student.school}')
     print()
 
     first_student.classes.extend(["Intermediate Japanese I", "Operating Systems"])

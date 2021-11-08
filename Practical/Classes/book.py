@@ -21,7 +21,7 @@ class Book:
         if other.__class is self.__class__:
             return (self.title, self.word_count) == (other.title, other.word_count)
         else:
-            return NotImplemented
+            return NotImplemented  # Not implemented with respect to the other type, falls back to builtin == !=
 
     def __lt__(self, other):
         if other.__class is self.__class__:

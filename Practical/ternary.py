@@ -1,4 +1,7 @@
 def set_excitement(message: str, optional_punctuation: str = None):
+    # optional_puncuation = None or "."
+    # optional_punctuation = "!!!" or "."
+
     optional_punctuation = optional_punctuation or "."
     return f"{message}{optional_punctuation}"
 

@@ -6,8 +6,15 @@ def debug_logins():
 
 def factorial(num):
     result = 1
-    for i in range(num, 0, -1):
-        result *= i
+
+    def factorial_loop():
+        nonlocal result
+        result = 1
+
+        for i in range(num, 0, -1):
+            result *= i
+
+    factorial_loop()
 
     return result
 
@@ -15,6 +22,7 @@ def factorial(num):
 def main():
     my_logins = {"bigcheese23": "hunter2"}
     debug_logins()
+    print(f'factorial of 5 is {factorial(5)}')
 
 
 # It's a script, we should run it!
