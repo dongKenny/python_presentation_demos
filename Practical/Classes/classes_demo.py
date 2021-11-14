@@ -3,7 +3,7 @@ from student import Student
 
 def class_variable_demo(first_student: Student, second_student: Student):
     print(f'{first_student} goes to the {first_student.school}')
-    print(f'{second_student} goes to the {first_student.school}')
+    print(f'{second_student} goes to the {second_student.school}')
     print()
 
     first_student.classes.extend(["Intermediate Japanese I", "Operating Systems"])
@@ -26,7 +26,7 @@ def main():
     first_student = Student("Kenny", "Dong")
     second_student = Student("Hammond", "Cheese")
 
-    grade_demo(first_student, second_student, 99.4, 2)
+    # grade_demo(first_student, second_student, 99.4, 2)
     class_variable_demo(first_student, second_student)
 
 

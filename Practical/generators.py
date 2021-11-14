@@ -22,10 +22,6 @@ def main():
     # end = time.time_ns()
     # print(f"List Squares Time: {end-start_time}")
     # print(f"Memory after list: {str(mem_profile.memory_usage())}MB")
-    # for i, square in enumerate(squares_list):
-    #     print(square)
-    #     if i > 50:
-    #         break
 
     print(f"Memory before generator: {str(mem_profile.memory_usage())}MB")
     start_time = time.time_ns()
@@ -33,10 +29,6 @@ def main():
     end = time.time_ns()
     print(f"Generator Squares Time: {end - start_time}")
     print(f"Memory after generator: {str(mem_profile.memory_usage())}MB")
-    for i, square in enumerate(squares_generator):
-        print(square)
-        if i > 50:
-            break
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ from functools import cache, lru_cache
 
 
 # @lru_cache(maxsize=10)
-# @cache
+@cache
 def fibonacci(n: int):
     if n <= 1:
         return n

@@ -83,7 +83,7 @@ def main():
     print()
 
     tkam = Book("To Kill a Mockingbird", 1960, "Harper Lee")
-    c_book = Book("C Programming Language, 2nd Edition", 1978)
+    c_book = Book("C Programming Language, 2nd Edition", 1978, "David")
     old_book = Book("War and Peace", 1867, "Leo Tolstoy")
     book = Book()
 
